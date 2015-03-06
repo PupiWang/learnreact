@@ -1,0 +1,8 @@
+{
+  "name": "learnreact",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "react": "~0.12.2"
+  }
+}
