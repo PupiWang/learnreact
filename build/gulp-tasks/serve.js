@@ -24,6 +24,7 @@ module.exports = function () {
     ]).on('change', reload);
 
     gulp.watch('app/styles/**/*.scss', ['styles']);
+    gulp.watch('app/scripts/**/*.jsx', ['jsx']);
     gulp.watch('app/fonts/**/*', ['fonts']);
     gulp.watch('bower.json', ['wiredep', 'fonts']);
 }

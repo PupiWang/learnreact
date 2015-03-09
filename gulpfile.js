@@ -5,9 +5,11 @@ var gulp = require('gulp');
 
 gulp.task('styles', require('./build/gulp-tasks/styles'));
 
+gulp.task('jsx', require('./build/gulp-tasks/jsx'));
+
 gulp.task('jshint', require('./build/gulp-tasks/jshint'));
 
-gulp.task('html', ['styles'], require('./build/gulp-tasks/html'));
+gulp.task('html', ['styles', 'jsx'], require('./build/gulp-tasks/html'));
 
 gulp.task('images', require('./build/gulp-tasks/images'));
 
