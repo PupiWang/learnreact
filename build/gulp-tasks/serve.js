@@ -9,6 +9,7 @@ module.exports = function () {
       port: 9000,
       server: {
         baseDir: ['.tmp', 'app'],
+//        baseDir: ['dist'],
         routes: {
           '/bower_components': 'bower_components'
         }
