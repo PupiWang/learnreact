@@ -3,13 +3,16 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
+var argv = require('yargs').argv;
+
 module.exports = function () {
+  var baseDir = ['.tmp', 'app'];
+  if (argv.production) baseDir = ['dist'];
   browserSync({
       notify: false,
       port: 9000,
       server: {
-        baseDir: ['.tmp', 'app'],
-//        baseDir: ['dist'],
+        baseDir: baseDir,
         routes: {
           '/bower_components': 'bower_components'
         }
