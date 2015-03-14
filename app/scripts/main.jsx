@@ -1,4 +1,4 @@
-var React = require('../../bower_components/react/react.js');
+var React = require('react');
 var CommentBox = require('./CommentBox.jsx');
 
 React.render(
